@@ -1,0 +1,23 @@
+ import java.util.Scanner;
+   public class testeMétodo{
+    public static double Nota(){
+        
+      Scanner input = new Scanner(System.in);
+      
+     double soma, media, A = 3.5, B = 7.5;
+  
+           soma = A + B;
+           media = soma/2;
+          
+          return media;
+ }     
+     
+     public static void main(String[] args){
+         
+         double resultado;
+         
+         resultado = Nota();
+         
+         System.out.println(resultado);
+     }
+}
