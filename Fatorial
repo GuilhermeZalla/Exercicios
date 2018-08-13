@@ -1,0 +1,19 @@
+import java.util.Scanner;
+ public class fatorial{
+  public static void main(String[] args){
+    
+     Scanner input = new Scanner(System.in);
+   
+     int C, N, F = 1;
+
+     System.out.println("Digite um número: ");
+     N = input.nextInt();
+     C = N;
+   
+     while(C < 1){
+       F = F * C;
+       C = C - 1;
+     }
+       System.out.println("O valor fatorial de "+N+" é igual a "+F);
+    }
+ }
