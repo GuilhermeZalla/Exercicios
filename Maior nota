@@ -1,0 +1,39 @@
+ import java.util.Scanner;
+  public class maiorNota{
+   public static void main(String[] args){
+       
+     Scanner input = new Scanner(System.in);
+     
+     int número;
+     double soma = 0, media, maiornota;
+     String nomeAluno;
+     
+     System.out.println("Informe o número de alunos: ");
+     número = input.nextInt();
+       
+     String[] nome = new String[número];
+     double[] notas = new double[número];
+     
+     for(int i = 0; i < número; ++i){
+         System.out.println("Aluno n "+(i+1)+"º : ");
+         System.out.println("Nome: ");
+         nome[i] = input.nextLine();
+         input.nextLine();
+         System.out.println("Nota: ");
+         notas[i] = input.nextDouble();
+         
+         soma = soma + notas[i];
+     }
+     
+      media = soma/número;
+     
+     for(int i = 0; i < número; ++i){
+      if(notas[i] > media){
+          maiornota = notas[i];
+          nomeAluno = nome[i];
+          
+         System.out.println("Aluno "+nome[i]+", possui nota maior que a média "+media);
+      }     
+    }
+   }
+  }
