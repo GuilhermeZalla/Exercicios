@@ -1,0 +1,26 @@
+ import java.util.Scanner;
+  public class VetorHistograma{
+   public static void main(String[] args){
+     
+     Scanner input = new Scanner(System.in);
+     
+     int[] tempsemana = new int[7];
+     String[] histograma = new String[7];
+     
+     for(int i = 0; i < 7; ++i){
+         System.out.println("Digite a temperatura do "+(i+1)+" dia: ");
+         tempsemana[i] = input.nextInt();
+     }
+       
+     for(int i = 0; i < 7; ++i){
+       for(int j = 0; j == tempsemana[i]; ++j){
+          histograma[i] = histograma[i] + "*";
+
+       }
+     }
+       int i = 0;
+     
+     System.out.println("A temperatura no "+(i+1)+" dia da semaana é "+histograma[i]);
+ 
+   }      
+  }
