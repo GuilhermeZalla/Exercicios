@@ -1,0 +1,45 @@
+import java.util.Scanner;
+   public class teste5{
+    public static void main(String[] args){
+    
+      nota(); 
+     }    
+ 
+     public static void nota(){
+    
+     Scanner input = new Scanner(System.in);   
+        
+     int[][] notaProva = new int[4][3];
+     int[] mediaAluno = new int[4];
+     int[] mediaProva = new int[3];
+     int soma = 0, i,j = 0;
+     double media = 0;
+    
+     for( i=0; i < 4; ++i){
+      for( j=0; j < 3; ++j){
+         System.out.println("Insira a " + ( j + 1 ) + " nota para o " + ( i + 1) + " aluno");
+          notaProva[i][j] = input.nextInt();
+          soma = soma + notaProva[i][j];
+      }
+     }   
+       mediaAluno[i] = soma/4;
+     
+     for( j=0; j < 3; ++j){
+      for( i=0; i < 4; ++i){
+          soma = soma + notaProva[i][j];
+      }
+     }
+        
+      mediaProva[j] = soma/3;    
+       
+     for( i=0; i < 4; ++i){
+        System.out.println("A média do aluno " + ( i + 1 ) + " foi "+mediaAluno[i]);
+     }
+     for( j=0; j < 3; ++j){
+        System.out.println("A média da prova " + ( j + 1) + " foi "+mediaProva[j]);
+     }     
+  } 
+ }   
+   
+   
+   
