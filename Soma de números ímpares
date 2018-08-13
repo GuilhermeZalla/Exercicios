@@ -1,0 +1,25 @@
+ import java.util.Scanner;
+  public class testevetor{
+     public static void main(String[] args){
+         
+     Scanner entrada = new Scanner(System.in);
+     
+     int espaço = 6;
+     int[] elementos = new int[5];
+     int soma = 0;
+     
+     for(int i=0; i < 5; ++i){
+         System.out.println("Digite o " +(i+1)+ " valor");
+         elementos[i] = entrada.nextInt();
+         
+     }
+        int i = 0;
+        if(elementos[i] % 2 !=0){
+            soma+=elementos[i];
+            System.out.println("A soma dos números impares é: "+soma);
+        } 
+        else{
+            System.out.println("Você não digitou nenhum número ímpar");
+        }    
+     }
+  }
