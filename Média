@@ -1,0 +1,18 @@
+package teste;
+ public class TesteC { 
+  public static void nota(double a, double b){
+      
+      double soma, média;
+      
+      soma = a + b;
+      média = soma/2;
+      
+      System.out.println(média);
+  }
+
+  public static void main(String[] args){
+      
+     nota(8.5, 9.8); 
+  
+  }
+ }
