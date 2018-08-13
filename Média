@@ -1,5 +1,4 @@
-package teste;
- public class TesteC { 
+public class teste { 
   public static void nota(double a, double b){
       
       double soma, média;
