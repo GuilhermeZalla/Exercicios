@@ -1,0 +1,27 @@
+ import java.util.Scanner;
+   public class teste3{
+    public static void main(String[] args){
+        
+    Scanner input = new Scanner(System.in);
+    
+     int[] entrada = new int[6];
+     int[] saída = new int[6];
+     int i;
+     
+     for(i = 0; i < entrada.length; i++){
+            System.out.println("Insira um valor: ");
+             entrada[i] = input.nextInt();
+     } 
+     for(i = 0; i < entrada.length; i++){
+      
+     if( i%2 == 0 ){
+          saída[i] = entrada[i] * 5;
+      }else{
+          saída[i] = entrada[i] + 5; 
+      }
+     }   
+     for( i = 0; i < entrada.length; i++){
+          System.out.println(+entrada[i]+" - "+saída[i]);
+     }
+    }     
+   }
