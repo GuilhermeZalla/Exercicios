@@ -1,0 +1,34 @@
+ import java.util.Scanner;
+  public class Exerc4{
+   public static void main(String[] args){
+    
+    Scanner input = new Scanner(System.in);
+    
+     int valor, valor2 = 0, valor3 = 0;
+     int soma = 0;
+     double media;
+
+     for(int i = 0; i < 5; ++i){
+      System.out.println("Digite o "+(i + 1)+ "º valor: ");
+      valor = input.nextInt();
+      soma = soma + valor;    
+     }
+      media = soma/5;
+      valor = 0;
+     if(valor%5==5){
+         valor = valor + 1;   
+     }
+      if(valor==0){
+         valor2 = valor + 1;
+     }
+      if(valor%2==0){
+         valor3 = valor + 1;  
+     }
+       
+     System.out.println("A soma entre os valores é: "+soma);
+     System.out.println("A media entre os valores é: "+media);
+     System.out.println("Valores divisiveis por cinco: "+valor);
+     System.out.println("A soma dos valores pares é: "+valor3);
+     System.out.println("Valores nulos: "+valor2);
+   }  
+  }
