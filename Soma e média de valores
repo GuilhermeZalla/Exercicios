@@ -1,0 +1,38 @@
+ import java.util.Scanner;
+  public class teste90{
+    public static void main(String[] args){
+        
+     Scanner input = new Scanner(System.in);
+     
+     int soma = 0, valor = 0, valor2, valor3, valor4;
+     double media;
+     
+     for(int i = 0; i < 5; ++i){
+        System.out.println("Digite o "+(i+1)+"º valor");
+        valor = input.nextInt();
+        soma = soma + valor;
+     }
+     
+     media = soma/5;
+
+     if(valor%5==5){
+         valor2 = 0;
+         valor2 = valor2 + 1;
+         System.out.println(valor2);
+     }
+     
+     if(valor == 0){
+         valor3 = 0;
+         valor3 = valor3 + 1;
+     }
+     
+     if(valor%2==0){
+         valor4 = 0;
+         valor4 = soma + valor;
+     }
+     
+     System.out.println("A soma entre os valores é: "+soma);
+     System.out.println("A media entre os valores é: "+media);
+  
+    }  
+  }
