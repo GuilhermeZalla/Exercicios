@@ -1,0 +1,35 @@
+import java.util.Scanner;
+  public class Escola{
+   public static void main(String[] args){
+       
+    Scanner input = new Scanner(System.in);
+    
+    int alunos;
+    int quant = 1;
+    int numero;
+    String nome = null;
+    double nota = 0;
+    double maiorNota = 0;
+    String alunodestaque;
+
+            System.out.println("=======================");
+            System.out.println("  E S C O L A          ");
+            System.out.println("=======================");
+            System.out.println("Quantos alunos a escola tem?");
+            alunos = input.nextInt();
+            System.out.println("=======================");
+                while( quant <= alunos){
+                    System.out.println("Aluno: ");
+                    numero = input.nextInt();
+                    System.out.println("Nome do aluno: ");
+                    nome = input.nextLine();
+                    System.out.println("Nota do "+nome+":");
+                    nota = input.nextDouble();
+                }
+                  if(maiorNota < nota){
+                      alunodestaque = nome;
+                      maiorNota = nota; 
+                  }
+                 System.out.println("O aluno destaque foi "+nome+" com nota "+maiorNota);
+   } 
+  }
