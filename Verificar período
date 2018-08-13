@@ -1,0 +1,25 @@
+import java.util.Scanner;
+ public class main{
+  public static void main(String[] args){
+      
+    Scanner input = new Scanner(System.in);
+      
+      System.out.println("Qual turno você estuda?");
+      System.out.println("Digite M para matutino, N para noturno e V para vespertino: ");
+      String resp = input.nextLine();
+      
+      switch(resp){
+          case "M":
+              System.out.println("Bom Dia!");
+          break;
+          case "V":
+              System.out.println("Boa Tarde!");
+          break;
+          case "N":
+              System.out.println("Boa Noite!");
+          break;
+          default:
+              System.out.println("Valor Inválido!");
+      }
+  }
+}
