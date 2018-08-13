@@ -1,0 +1,51 @@
+import java.util.Scanner;
+  public class Vetor2{
+   public static void main(String[] args){
+       
+    Scanner input = new Scanner(System.in);
+    
+    int[] valor = new int[12];
+    int[] valor2 = new int[12];
+    int número = 0, número2 = 0, soma;
+    
+    valor[0] = 12;
+    valor[1] = 8;
+    valor[2] = 3;
+    valor[3] = 5;
+    valor[4] = 6;
+    valor[5] = 7;
+    valor[6] = 9;
+    valor[7] = 0;
+    valor[8] = 1;
+    valor[9] = 2;
+    valor[10] = 5;
+    valor[11] = 13;
+    
+    valor2[0] = 5;
+    valor2[1] = 6;
+    valor2[2] = 7;
+    valor2[3] = 8;
+    valor2[4] = 9;
+    valor2[5] = 11;
+    valor2[6] = 7;
+    valor2[7] = 1;
+    valor2[8] = 2;
+    valor2[9] = 4;
+    valor2[10] = 3;
+    valor2[11] = 1;
+    
+    for(int i = 0; i < 1; ++i){
+     for(int j = 0; j < 1; ++j){
+        System.out.println("Digite uma posição de 0 a 11: ");
+         número = input.nextInt();
+        System.out.println("Digite uma segunda posição de 0 a 11: ");
+         número2 = input.nextInt();       
+     } 
+    }
+    
+    soma = valor[número] + valor2[número2];
+    
+    System.out.println("Soma dos valores foi: "+soma);
+  
+   }
+  }
