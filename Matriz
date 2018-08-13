@@ -1,0 +1,35 @@
+ public class calculoMatriz{
+  public static void main(String[] args){
+      
+    int[] A = new int[10];
+    int[] B = new int[10];
+    int[][] C = new int[10][10];
+    
+    A[0] = 15;
+    A[1] = 44;
+    A[2] = 23;
+    A[3] = 1;
+    A[4] = 0;
+    A[5] = 18;
+    A[6] = 17;
+    A[7] = 37;
+    A[8] = 35;
+    A[9] = 54;
+    
+    B[0] = 32;
+    B[1] = 115;
+    B[2] = 48;
+    B[3] = 55;
+    B[4] = 51;
+    B[5] = 0;
+    B[6] = -48;
+    B[7] = 85;
+    B[8] = 15;
+    B[9] = 99;
+    
+    for(int i = 0; i < 10; ++i){
+       C[i][i] = A[i] - B[i];
+       System.out.println(C[i][i]);
+    }
+  }   
+ }
