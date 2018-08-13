@@ -1,0 +1,29 @@
+public class testeMaiorMenor{
+     
+     public static void maiorValor(int valor1, int valor2){
+         if(valor1 > valor2){
+              System.out.println("O valor: "+valor1+" é maior que o valor: "+valor2);
+     }else{
+              System.out.println("O valor: "+valor2+" é maior que o valor: "+valor1);
+          }
+     }
+     
+     public static void menorValor(int valor1, int valor2){
+         if(valor1 < valor2){
+             System.out.println("O valor: "+valor1+" é menor que o valor: "+valor2);
+         }else{
+             System.out.println("O valor "+valor2+" é menor que o valor: "+valor1);
+         }
+     }
+     
+  public static void main(String[] args){
+      
+        maiorValor(2, 6);
+        maiorValor(12,9);
+        maiorValor(80, 81);
+        menorValor(10, 20);
+        menorValor(0, 2);
+        menorValor(111, 2314);
+        menorValor(19491, 15151);
+  }
+ }
