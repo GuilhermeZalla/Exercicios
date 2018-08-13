@@ -1,0 +1,25 @@
+public class VetorTemp{
+  public static void main(String[] args){
+      
+  int soma = 0;
+  double media;
+  double[]temperatura = new double[7];
+  
+  temperatura[0] = 17.0;
+  temperatura[1] = 21.0;
+  temperatura[2] = 23.0;
+  temperatura[3] = 19.0;
+  temperatura[4] = 18.0;
+  temperatura[5] = 20.0;
+  temperatura[6] = 21.0;
+  
+  for(int i = 0; i < 7; ++i){
+      soma += temperatura[i];
+     }
+      
+    media = soma/7;
+      
+   System.out.println("A temperatura média da semana foi: "+media);
+ 
+  }  
+}
