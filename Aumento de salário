@@ -1,0 +1,26 @@
+import java.util.Scanner;
+  public class sistemaSalario{
+   public static void main(String[] args){
+      
+      Scanner input = new Scanner(System.in);
+      
+      double salario, aumento;
+      
+      System.out.println("Digite o valor do seu salário atual: ");
+      salario = input.nextDouble();
+      
+      if(salario <= 280.00){
+           aumento = salario + 20.00;
+           System.out.println("O seu salário de valor "+salario+" teve aumento de 20%, portanto o seu salário atual é: "+aumento);
+      }else if(salario >= 280.00 & salario <= 700.00){
+           aumento = salario + 15;
+           System.out.println("O seu salário de valor "+salario+" teve aumento de 15%, portanto o seu salário atual é: "+aumento);
+      }else if(salario >= 700.00 & salario <= 1500.00){
+           aumento = salario + 10;
+           System.out.println("O seu salário de valor "+salario+" teve aumento de 10%, portanto o seu salário atual é: "+aumento);
+      }else if(salario >= 1500.00){
+          aumento = salario + 5;
+          System.out.println("O seu salário de valor "+salario+" teve aumento de 5%, portanto o seu salário atual é: "+aumento);
+      }   
+  }   
+}
