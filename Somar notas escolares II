@@ -1,0 +1,38 @@
+import java.util.Scanner;
+  public class main{
+   public static void main(String[] args){
+      
+      Scanner input = new Scanner(System.in); 
+
+     double N1, N2, N3, N4;
+     double media, media2, exame;
+    
+            N1 = input.nextDouble();
+            N2 = input.nextDouble();
+            N3 = input.nextDouble();
+            N4 = input.nextDouble();
+            
+        media = (N1 + N2 + N3 + N4)/4;
+        
+        System.out.printf("Media: %2f\n", media);
+        
+      if(media >= 7.0){
+        System.out.println("Aluno aprovado.");
+      }else if(media < 5.0){
+        System.out.println("Aluno reprovado.");
+      }else if((media >= 5.0) || (media <= 6.9)){
+        System.out.println("Aluno em exame.");
+        exame = input.nextDouble();
+        System.out.printf("Nota do exame: %2f\n", exame);
+        media2 = (media + exame)/2;
+        if(media2 >= 5.0){
+            System.out.printf("Aluno aprovado\n"
+                              +"Media final: %2f\n", media2);
+        
+        }else if(media2 <= 4.9){
+            System.out.printf("Aluno reprovado\n"
+                              +"Media final: %2f\n", media2);
+        }
+      }     
+ }
+}
